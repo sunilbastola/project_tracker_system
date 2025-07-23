@@ -38,6 +38,7 @@ user_choice = get_user_choice()
 
 # Function to direct to approproate function after user making a choice:
 # def validate_user_choice(user_choice):
+
 #     if user_choice == '1':
 #         add_team_member()
 #     elif user_choice == '2':

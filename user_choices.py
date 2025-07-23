@@ -24,7 +24,9 @@ def add_team_member():
     members_list.update({member_name:member_score})
 
 n = 0
-while n < 2:
+setFieldNum = input("\n Enter the number that you want to set.")
+num = int(setFieldNum)
+while n < num+1:
     add_team_member()
     n = n+1
 
@@ -38,13 +40,13 @@ while n < 2:
 6. Print the lowest valule and highest value
 '''
 
-def find_highest_lowest():
-    values = list(members_list.values())
-    print(values)
-    values = sorted(values)
-    print(values)
+# def find_highest_lowest():
+#     values = list(members_list.values())
+#     print(values)
+#     values = sorted(values)
+#     print(values)
 
-find_highest_lowest()
+# find_highest_lowest()
 
 # Pseudocode for finding the Team Members above the target
 '''
@@ -57,6 +59,23 @@ find_highest_lowest()
 7. Print the keys or name from the initial member list.
 '''
 
+print(members_list)
+# Create a function that identifies the values above the performance target.
+def identify_preformance_target():
+    performance_values = []
+    performance_target = 80
+    performance_members = []
+    member_scores = list(members_list.values())
+
+    for key,value in members_list.items():
+        if value >= performance_target:
+
+            performance_values.append(value)
+            performance_members.append(key)
+    print(performance_members)
+    print(performance_values)
+
+identify_preformance_target()
 
 # print(members_list)
 # print(members_list.values())
