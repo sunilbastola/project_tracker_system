@@ -37,33 +37,20 @@ def get_user_choice(user_choice):
 user_choice = get_user_choice()
 
 # Function to direct to approproate function after user making a choice:
-def validate_user_choice(user_choice):
-
-    if user_choice == '1':
-        add_team_member()
-    elif user_choice == '2':
-        update_member_score()
-    elif user_choice =='3':
-        calculate_avg_score()
-    elif user_choice =='4':
-        find_highest_lowest()
-    elif user_choice =='5':
-        idenfity_above_target()
-    elif user_choice =='6':
-        exit_program()
+# def validate_user_choice(user_choice):
+#     if user_choice == '1':
+#         add_team_member()
+#     elif user_choice == '2':
+#         update_member_score()
+#     elif user_choice =='3':
+#         calculate_avg_score()
+#     elif user_choice =='4':
+#         find_highest_lowest()
+#     elif user_choice =='5':
+#         idenfity_above_target()
+#     elif user_choice =='6':
+#         exit_program()
     
-
-
-
-
-
-
-
-
-
-
-
-
 
     # # Initialize the self method.
     # def __init__(self, user_choice):
